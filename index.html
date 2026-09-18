@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — ProspectPro (extensão WhatsApp)</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.2em; margin-top: 2em; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666; }
+</style>
+</head>
+<body>
+<h1>Política de Privacidade — ProspectPro (modo extensão)</h1>
+<p><em>Última atualização: 18 de setembro de 2026.</em></p>
+
+<p>Esta política descreve como a extensão de navegador <strong>ProspectPro — WhatsApp (modo extensão)</strong> trata dados ao ser usada sobre o WhatsApp Web.</p>
+
+<h2>O que a extensão faz</h2>
+<p>A extensão é um mini-CRM que funciona como uma camada sobre o WhatsApp Web (<code>web.whatsapp.com</code>), permitindo salvar leads, organizá-los em um funil (colunas do tipo Kanban) e inserir mensagens prontas na caixa de digitação. Não é um produto oficial da Meta/WhatsApp.</p>
+
+<h2>Quais dados são lidos</h2>
+<p>Para funcionar, a extensão lê da própria página do WhatsApp Web, via DOM, no navegador do usuário:</p>
+<ul>
+  <li>Nome e, quando visível, número de telefone do contato da conversa aberta;</li>
+  <li>Foto/avatar do contato (endereço da imagem já exibida pelo WhatsApp Web);</li>
+  <li>Trecho da última mensagem e contagem de não lidas, exibidos na lista de conversas;</li>
+</ul>
+<p>Esses dados são usados apenas para exibir e organizar as informações dentro da própria interface da extensão (ex.: card do lead, lista de conversas).</p>
+
+<h2>Onde os dados ficam armazenados</h2>
+<p><strong>Todo o armazenamento é local</strong>, usando a API <code>chrome.storage.local</code> do navegador do próprio usuário. A extensão não possui backend, não faz chamadas de rede a servidores próprios ou de terceiros, e não sincroniza dados com nenhum serviço externo.</p>
+
+<h2>Compartilhamento de dados</h2>
+<p>Nenhum dado é vendido, compartilhado ou transferido a terceiros. Nenhum dado sai do dispositivo do usuário.</p>
+
+<h2>Uso de código remoto</h2>
+<p>A extensão não carrega nem executa código remoto. Todos os scripts são empacotados localmente na própria extensão.</p>
+
+<h2>Permissões solicitadas</h2>
+<ul>
+  <li><code>storage</code> — para salvar localmente leads, colunas do funil e preferências (como tema).</li>
+  <li><code>host_permissions</code> para <code>https://web.whatsapp.com/*</code> — para inserir a interface da extensão e ler dados da conversa aberta.</li>
+</ul>
+
+<h2>Retenção e exclusão de dados</h2>
+<p>Os dados permanecem armazenados localmente até que o usuário os apague manualmente pela própria extensão ou desinstale a extensão do navegador, o que remove todos os dados salvos.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre esta política podem ser enviadas para: <a href="mailto:douglas.belarr@gmail.com">douglas.belarr@gmail.com</a>.</p>
+
+<footer>
+  <p>Esta página é a Política de Privacidade oficial referenciada na ficha da extensão na Chrome Web Store.</p>
+</footer>
+</body>
+</html>
